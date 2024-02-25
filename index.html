@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter">
+  
+  <title>Frontend Mentor | Social links profile</title>
+</head>
+<style>
+  :root{
+    --box-color: hsl(0, 0%, 8%);
+    --text-color: #FFFFFF;
+    --main-color:  hsl(75, 94%, 57%);
+    --button-bg-color: #333333;
+    --second-color: #A9A9A9;
+  }
+
+  body{
+    display: flex;
+    color: var(--text-color);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: black;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+  }
+
+  .container-box{
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--box-color);
+    padding: 3rem;
+  }
+
+  .section-1 img{
+    border-radius: 50%;
+  }
+
+  .section-2 p{
+    color: var(--main-color);
+    margin-top: -15px;
+    font-weight: 600;
+  }
+
+  .section-3 p{
+    color: var(--second-color);
+    font-weight: 600;
+  }
+
+  .section-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .section-4 a{ 
+    border-radius: 10px;
+    padding: 1rem 0;
+    width: 250%;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    background: var(--button-bg-color);
+  }
+</style>
+<body>
+  <div class="container-box">
+    <div class="section-1">
+      <img src="/assets/images/avatar-jessica.jpeg" alt="">
+    </div>
+    <div class="section-2">
+      <h1>Jessica Randall</h1>
+      <p>London, United Kingdom</p>
+    </div>
+    <div class="section-3">
+      <p>"Front-end developer and avid reader."</p>
+    </div>
+    <div class="section-4">
+      <a target="_blank" href="https://github.com/islom-pardaboyev">Github</a>
+      <a target="_blank" href="https://www.frontendmentor.io/profile/islom-pardaboyev">Frontend Mentor</a>
+      <a target="_blank" href="#">Linkedin</a>
+      <a target="_blank" href="#">Twitter</a>
+      <a target="_blank" href="#">Instagram</a>
+    </div>
+  </div>
+</body>
+</html>
